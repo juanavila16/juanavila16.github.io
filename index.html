@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Final</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+
+
+</head>
+<body>
+<!--Navegador-->
+<header class="cd-auto-hide-header">
+	<div class="logo"><a href="#0"><img src="images/logo listo.png" alt="Logo"></a></div>
+
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+
+		<ul id="cd-navigation">
+      <li><a href="index.html">Inicio</a></li>
+			<li><a href="Servicios.html">Servicios</a></li>
+			<li><a href="carrete.html">Galería</a></li>
+      <li><a href="contactanos.html">Contáctanos</a></li>
+			
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+<!-- Swiper -->
+<div class="swiper-container mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/1111.jpg"></div>
+      <div class="swiper-slide"><img src="images/1112.jpg"></div>
+      <div class="swiper-slide"><img src="images/1113.jpg"></div>
+      <div class="swiper-slide"><img src="images/1114.jpg"></div>
+      <div class="swiper-slide"><img src="images/1115.jpg"></div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+<!--Javascript-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <!--Fin de Slider-->
+</main> <!-- .cd-main-content -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+<!--INICIO DE LAS CAJAS-->
+<div class="contenedor">
+
+  <!--Inicio caja 1-->
+  <div class="caja_1">
+  <div class="h1"><h1>¿Por qué es importante la fotografía publicitaria?</h1></div>
+  <p>La comercialización de los productos ha hecho de la fotografía publicitaria 
+    la actividad más importante del trabajo fotográfico por su volumen, técnica 
+    y creatividad. Las estrategias comerciales difieren entre sí pero todas 
+    ellas necesitan una imagen para que tal estrategia resulte eficaz y atractiva.
+    La fotografía publicitaria difiere del resto de los géneros fotográficos 
+    por varios motivos. Su funcionalidad le exige una adaptabilidad a los 
+    intereses comerciales que tienen por finalidad el aumento de las ventas 
+    o servicios. Si el anunciante consigue aumentar el número de ventas es 
+    cuando se valora positivamente la capacidad publicística de la fotografía. 
+    La fotografía publicitaria muchas veces se inspira en la realidad pero 
+    lo que nos representa por medio de sus imágenes es una realidad construida.
+  </p>
+  </div>
+  <!--Fina caja 1-->
+      
+  <!--Inicio caja 2-->
+  <div class="caja_2">
+  <div class="h1"><h1>¿Cómo le beneficia a tu marca?</h1></div>
+  <div class="h2"><h2>Nuestra propuesta de valor</h2></div>
+  <p>Nos adaptamos facilmente a lo que la marca quiera reflejar. Nuestro 
+    servicio no se limita únicamente a proceso técnico de la toma de 
+    fotografías, sino que podemos ofrecerles a las marcas y empresas un
+    servicio más orientado a sus objetivos publicitarios, dando una
+    guía más clara por medio de la conceptualización e innovación 
+    para que el producto sea llamativo, entregando un resultado cumplidamente
+    en un tiempo adecuado.
+  </p>
+        
+  <div class="subcaja"><a href="https://www.google.com/intl/es-419/gmail/about/">Cotiza con nosotros</a></div>
+  </div>
+  <!--Fin caja 2-->
+        
+  <!--Inicio caja 3-->
+  <div class="caja_3">
+  <div class="h1"><h1>¿A quién nos dirigimos?</h1></div>
+  <p>^ Emprendedores</p>
+  <p>^ Pymes</p>
+  <p>^ Empresas medianas y grandes (empresas y marcas interesadas en realizar campañas publicitarias 
+    de sus productos y /o servicios)</p>
+  <p>^ Cadenas de restaurantes, restaurantes independientes, cafeterías, publicaciones de gastronomía, 
+    empresas comercializadoras de productos alimenticios, almacenes y tiendas gastronómicas</p>
+  <p>^ Empresas y marcas interesadas en documentar sus productos.</p>
+  <div class="subcaja"><a href="https://www.google.com/intl/es-419/gmail/about/">¿Te interesa?</a></div>
+  </div>
+  <!--Fin caja 3-->
+
+    </div>
+<!--FIN DE LAS CAJAS-->
+
+<Footer>
+  <p>Trabajo final para Diseño web</p>
+  <p>Juan Pablo Ávila</p>
+  <p>Universidad Católica Luis Amigó</p>
+  <p>2021</p>
+</Footer>
+</body>
+</html>
